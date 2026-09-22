@@ -1,0 +1,14 @@
+import pandas as pd
+
+data = {
+    'Experiment_ID': [1, 2, 3, 4],
+    'Temperature': [22.5, 23.0, 21.8, 24.1],
+    'Result': ['Pass', 'Pass', 'Fail', 'Pass']
+}
+
+df = pd.DataFrame(data)
+
+
+df.to_csv('experiment_data.csv', index=False)
+
+print("CSV file created successfully!")
